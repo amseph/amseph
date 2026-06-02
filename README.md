@@ -4,9 +4,6 @@
 
 <br/>
 
-[![GitHub](https://img.shields.io/badge/GitHub-amseph-181717?style=flat\&logo=github)](https://github.com/amseph)
-[![Email](https://img.shields.io/badge/Email-jaurigue.ijj%40gmail.com-EA4335?style=flat\&logo=gmail\&logoColor=white)](mailto:jaurigue.ijj@gmail.com)
-
 </div>
 
 ---
@@ -23,7 +20,39 @@ I like building systems that are not only functional, but easy to understand. My
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=html,css,js,ts,cpp,react,nodejs,mysql,mongodb,supabase,vercel,npm,postman&theme=dark" alt="Tech Stack Icons" />
+<sub>PLAYER 1 LOADOUT</sub>
+
+<br/><br/>
+
+<img src="https://skillicons.dev/icons?i=html,css,js,ts,cpp,react,nodejs,mysql,mongodb,supabase,vercel,npm,postman&theme=dark&perline=13" alt="Tech Stack Icons" />
+
+</div>
+
+---
+
+## Contact
+
+<div align="center">
+
+Slide right in if you want to collaborate on a project!
+
+<br/><br/>
+
+<a href="https://github.com/amseph">
+  <img src="./assets/contact-github.svg" width="46" alt="GitHub" />
+</a>
+&nbsp;&nbsp;
+<a href="mailto:jaurigue.ijj@gmail.com">
+  <img src="./assets/contact-email.svg" width="46" alt="Email" />
+</a>
+&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/jaurigueivan">
+  <img src="./assets/contact-linkedin.svg" width="46" alt="LinkedIn" />
+</a>
+&nbsp;&nbsp;
+<a href="https://discord.com/users/739709074433769543">
+  <img src="./assets/contact-discord.svg" width="46" alt="Discord" />
+</a>
 
 </div>
 
