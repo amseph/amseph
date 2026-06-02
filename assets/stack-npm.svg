@@ -1,0 +1,6 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+  <rect width="64" height="64" fill="#07101F"/>
+  <rect x="4" y="4" width="56" height="56" fill="#132244" stroke="#58BFFB" stroke-width="2"/>
+  <rect x="12" y="22" width="40" height="20" fill="#CB3837"/>
+  <text x="16" y="36" fill="#FFF" font-family="monospace" font-size="13" font-weight="700">npm</text>
+</svg>
