@@ -1,10 +1,9 @@
-```yaml
 name: Generate Arcade Contribution Graph
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Runs automatically every day at midnight
-  workflow_dispatch: # Allows you to run it manually anytime
+    - cron: "0 0 * * *"
+  workflow_dispatch:
 
 jobs:
   generate:
@@ -19,7 +18,8 @@ jobs:
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ${{ github.repository_owner }}
-          scenario: bomberman 
+          games: bomberman 
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Save Animation to Assets
         run: |
