@@ -11,18 +11,6 @@
 
 ---
 
-## System Status
-
-| Field        | Details                                       |
-| ------------ | --------------------------------------------- |
-| **Mode**     | UI/UX-focused Developer                       |
-| **Focus**    | Data Analysis • Automation • Interface Design |
-| **Learning** | Cloud Computing                               |
-| **Building** | Interactive Web Portfolio                     |
-| **Style**    | Clean, familiar, user-first experiences       |
-
----
-
 ## About
 
 I'm Ivan, a BSIT student focused on **data analysis**, **automation**, and **UI/UX**.
