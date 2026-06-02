@@ -29,9 +29,8 @@ I like building systems that are not only functional, but easy to understand. My
 
 ---
 ## Activity Monitor
-<div align="center">
 
-<br/><br/>
+<div align="center">
 
 <picture>
   <source 
@@ -43,7 +42,7 @@ I like building systems that are not only functional, but easy to understand. My
     srcset="https://raw.githubusercontent.com/amseph/amseph/output/bomberman-contribution-graph.svg"
   />
   <img 
-    alt="Animated GitHub contribution graph" 
+    alt="IvanOS animated contribution activity monitor" 
     src="https://raw.githubusercontent.com/amseph/amseph/output/bomberman-contribution-graph.svg"
     width="100%"
   />
