@@ -54,7 +54,7 @@ Style       Clean, familiar, user-first experiences
 
 <p align="center">
   <img 
-    src="https://github-readme-activity-graph.vercel.app/graph?username=ivanjj20049&bg_color=0d1117&color=c9d1d9&line=58a6ff&point=f0f6fc&area=true&hide_border=true&custom_title=IvanOS%20Activity%20Monitor" 
+    src="https://github-readme-activity-graph.vercel.app/graph?username=amseph&bg_color=0d1117&color=c9d1d9&line=58a6ff&point=f0f6fc&area=true&hide_border=true&custom_title=IvanOS%20Activity%20Monitor" 
     alt="IvanOS GitHub Activity Monitor"
   />
 </p>
@@ -92,11 +92,11 @@ Improving      UI consistency, accessibility, and user flow
 
 ## Connect with Me
 
-Feel free to explore my repositories and reach out if you'd like to collaborate on a project.
+Connect and reach out if you'd like to collaborate on a project!
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-ivanjj20049-181717?style=for-the-badge\&logo=github)](https://github.com/ivanjj20049)
-[![Email](https://img.shields.io/badge/Email-Contact%20Me-D14836?style=for-the-badge\&logo=gmail\&logoColor=white)](mailto:ivanjj20049@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-amseph-181717?style=for-the-badge&logo=github)](https://github.com/amseph)
+[![Email](https://img.shields.io/badge/Email-Contact%20Me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jaurigue.ijj@gmail.com)
 
 </div>
