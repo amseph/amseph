@@ -1,32 +1,61 @@
-name: Generate Arcade Contribution Graph
+steps:
+  - name: Generate Bomberman Graph
+    uses: abozanona/pacman-contribution-graph@main
+    with:
+      github_user_name: ${{ github.repository_owner }}
+      games: "bomberman"
 
-on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-  push:
-    branches:
-      - master
+  - name: Crop SVG whitespace
+    run: |
+      python - <<'PY'
+      import re
+      from pathlib import Path
 
-jobs:
-  generate:
-    permissions:
-      contents: write
+      files = [
+          Path("dist/bomberman-contribution-graph.svg"),
+          Path("dist/bomberman-contribution-graph-dark.svg"),
+      ]
 
-    runs-on: ubuntu-latest
-    timeout-minutes: 20
+      CROP_TOP = 150
 
-    steps:
-      - name: Generate Bomberman Graph
-        uses: abozanona/pacman-contribution-graph@main
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          games: "bomberman"
+      for file in files:
+          if not file.exists():
+              print(f"Skipped missing file: {file}")
+              continue
 
-      - name: Push SVGs to output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          svg = file.read_text(encoding="utf-8")
+
+          match = re.search(r'viewBox="([\d.]+) ([\d.]+) ([\d.]+) ([\d.]+)"', svg)
+          if not match:
+              print(f"No viewBox found in {file}")
+              continue
+
+          x, y, w, h = map(float, match.groups())
+          new_y = y + CROP_TOP
+          new_h = max(h - CROP_TOP, 1)
+
+          svg = re.sub(
+              r'viewBox="[\d.]+ [\d.]+ [\d.]+ [\d.]+"',
+              f'viewBox="{x:g} {new_y:g} {w:g} {new_h:g}"',
+              svg,
+              count=1
+          )
+
+          svg = re.sub(
+              r'height="[\d.]+"',
+              f'height="{new_h:g}"',
+              svg,
+              count=1
+          )
+
+          file.write_text(svg, encoding="utf-8")
+          print(f"Cropped {file}")
+      PY
+
+  - name: Push SVGs to output branch
+    uses: crazy-max/ghaction-github-pages@v3.1.0
+    with:
+      target_branch: output
+      build_dir: dist
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
