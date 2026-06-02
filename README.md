@@ -45,8 +45,6 @@ I like building systems that are not only functional, but easy to understand. My
 
 <div align="center">
 
-<strong>Activity Overview</strong><br/> <sub>Animated contribution board powered by GitHub Actions</sub>
-
 <br/><br/>
 
 <picture>
