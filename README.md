@@ -23,21 +23,33 @@
 <div align="center">
 
 Slide right in if you want to collaborate on a project!
-<a href="https://github.com/amseph">
-  <img src="./assets/contact-github.svg" width="46" alt="GitHub" />
-</a>
-&nbsp;&nbsp;
-<a href="mailto:jaurigue.ijj@gmail.com">
-  <img src="./assets/contact-email.svg" width="46" alt="Email" />
-</a>
-&nbsp;&nbsp;
-<a href="https://www.linkedin.com/in/jaurigueivan">
-  <img src="./assets/contact-linkedin.svg" width="46" alt="LinkedIn" />
-</a>
-&nbsp;&nbsp;
-<a href="https://discord.com/users/739709074433769543">
-  <img src="./assets/contact-discord.svg" width="46" alt="Discord" />
-</a>
+
+<br/><br/>
+
+<table>
+  <tr>
+    <td align="center" width="70">
+      <a href="https://github.com/amseph">
+        <img src="./assets/contact-github.svg" width="44" alt="GitHub" />
+      </a>
+    </td>
+    <td align="center" width="70">
+      <a href="mailto:jaurigue.ijj@gmail.com">
+        <img src="./assets/contact-email.svg" width="44" alt="Email" />
+      </a>
+    </td>
+    <td align="center" width="70">
+      <a href="https://www.linkedin.com/in/jaurigueivan">
+        <img src="./assets/contact-linkedin.svg" width="44" alt="LinkedIn" />
+      </a>
+    </td>
+    <td align="center" width="70">
+      <a href="https://discord.com/users/739709074433769543">
+        <img src="./assets/contact-discord.svg" width="44" alt="Discord" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 </div>
 
