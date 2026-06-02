@@ -8,19 +8,9 @@
 
 ---
 
-## About
-
-I'm Ivan, a BSIT student focused on **data analysis**, **automation**, and **UI/UX**.
-
-I like building systems that are not only functional, but easy to understand. My goal is to design interfaces that feel familiar, so users can move through them without feeling lost.
-
----
-
 ## Tech Stack
 
 <div align="center">
-
-<sub>PLAYER 1 LOADOUT</sub>
 
 <img src="https://skillicons.dev/icons?i=html,css,js,ts,cpp,react,nodejs,mysql,mongodb,supabase,vercel,npm,postman&theme=dark&perline=13" alt="Tech Stack Icons" />
 
