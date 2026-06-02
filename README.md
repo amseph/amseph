@@ -33,9 +33,6 @@ I like building systems that are not only functional, but easy to understand. My
 <div align="center">
 
 Slide right in if you want to collaborate on a project!
-
-<br/><br/>
-
 <a href="https://github.com/amseph">
   <img src="./assets/contact-github.svg" width="46" alt="GitHub" />
 </a>
