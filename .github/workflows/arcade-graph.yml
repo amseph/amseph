@@ -1,4 +1,29 @@
-      - name: Add IvanOS activity header
+name: Generate Arcade Contribution Graph
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Generate Bomberman Graph
+        uses: abozanona/pacman-contribution-graph@main
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          games: "bomberman"
+
+      - name: Crop SVG whitespace
         run: |
           python - <<'PY'
           import re
@@ -9,43 +34,7 @@
               Path("dist/bomberman-contribution-graph-dark.svg"),
           ]
 
-          header = '''
-            <defs>
-              <linearGradient id="ivanAccent" x1="0" y1="0" x2="900" y2="0" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#58A6FF"/>
-                <stop offset="0.5" stop-color="#A78BFA"/>
-                <stop offset="1" stop-color="#2DD4BF"/>
-              </linearGradient>
-            </defs>
-
-            <rect x="24" y="28" width="420" height="74" rx="18" fill="#0D1117" opacity="0.72"/>
-            <rect x="24" y="28" width="420" height="74" rx="18" fill="none" stroke="#30363D" stroke-width="1"/>
-
-            <circle cx="58" cy="65" r="8" fill="#2DD4BF"/>
-            <text x="78" y="58" fill="#F0F6FC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">
-              Activity Monitor
-            </text>
-            <text x="78" y="82" fill="#8B949E" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">
-              Contribution movement powered by GitHub Actions
-            </text>
-
-            <rect x="470" y="44" width="118" height="32" rx="16" fill="#111827" stroke="#30363D"/>
-            <text x="498" y="65" fill="#58A6FF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">
-              LIVE
-            </text>
-
-            <rect x="604" y="44" width="150" height="32" rx="16" fill="#111827" stroke="#30363D"/>
-            <text x="631" y="65" fill="#A78BFA" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">
-              AMSEPH
-            </text>
-
-            <rect x="770" y="44" width="192" height="32" rx="16" fill="#111827" stroke="#30363D"/>
-            <text x="800" y="65" fill="#2DD4BF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">
-              IVANOS TELEMETRY
-            </text>
-
-            <rect x="24" y="118" width="938" height="2" rx="1" fill="url(#ivanAccent)" opacity="0.75"/>
-          '''
+          CROP_TOP = 150
 
           for file in files:
               if not file.exists():
@@ -54,22 +43,37 @@
 
               svg = file.read_text(encoding="utf-8")
 
-              # Remove old injected header if workflow reruns
+              match = re.search(r'viewBox="([\d.]+) ([\d.]+) ([\d.]+) ([\d.]+)"', svg)
+              if not match:
+                  print(f"No viewBox found in {file}")
+                  continue
+
+              x, y, w, h = map(float, match.groups())
+              new_y = y + CROP_TOP
+              new_h = max(h - CROP_TOP, 1)
+
               svg = re.sub(
-                  r'<!-- IVANOS-ACTIVITY-HEADER-START -->.*?<!-- IVANOS-ACTIVITY-HEADER-END -->',
-                  '',
+                  r'viewBox="[\d.]+ [\d.]+ [\d.]+ [\d.]+"',
+                  f'viewBox="{x:g} {new_y:g} {w:g} {new_h:g}"',
                   svg,
-                  flags=re.DOTALL
+                  count=1
               )
 
-              injected = f'''
-              <!-- IVANOS-ACTIVITY-HEADER-START -->
-              {header}
-              <!-- IVANOS-ACTIVITY-HEADER-END -->
-              '''
-
-              svg = svg.replace(">", ">" + injected, 1)
+              svg = re.sub(
+                  r'height="[\d.]+"',
+                  f'height="{new_h:g}"',
+                  svg,
+                  count=1
+              )
 
               file.write_text(svg, encoding="utf-8")
-              print(f"Added IvanOS header to {file}")
+              print(f"Cropped {file}")
           PY
+
+      - name: Push SVGs to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
