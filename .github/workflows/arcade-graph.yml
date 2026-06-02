@@ -29,10 +29,16 @@ jobs:
           cp dist/puzzle-bobble-contribution-graph.svg assets/puzzle-bobble.svg
           cp dist/puzzle-bobble-contribution-graph-dark.svg assets/puzzle-bobble-dark.svg
 
+      - name: Apply Real GitHub Contribution Data
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_USER_NAME: amseph
+        run: node .github/scripts/update-arcade-graph.mjs
+
       - name: Commit and Push Changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add assets/puzzle-bobble.svg assets/puzzle-bobble-dark.svg
+          git add assets/puzzle-bobble.svg assets/puzzle-bobble-dark.svg .github/scripts/update-arcade-graph.mjs .github/workflows/arcade-graph.yml
           git commit -m "Update Puzzle Bobble contribution graph" || exit 0
           git push

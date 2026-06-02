@@ -32,33 +32,25 @@
 
 ## Activity Monitor
 
-<table align="center" border="0" cellpadding="2" cellspacing="0">
-  <tr>
-    <td bgcolor="#45DFFF">
-      <table border="0" cellpadding="6" cellspacing="0">
-        <tr>
-          <td bgcolor="#07101F">
-            <picture>
-              <source 
-                media="(prefers-color-scheme: dark)" 
-                srcset="./assets/puzzle-bobble-dark.svg"
-              />
-              <source 
-                media="(prefers-color-scheme: light)" 
-                srcset="./assets/puzzle-bobble.svg"
-              />
-              <img 
-                alt="IvanOS animated contribution board" 
-                src="./assets/puzzle-bobble.svg"
-                width="100%"
-              />
-            </picture>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
+<div align="center">
+
+<picture>
+  <source 
+    media="(prefers-color-scheme: dark)" 
+    srcset="./assets/puzzle-bobble-dark.svg"
+  />
+  <source 
+    media="(prefers-color-scheme: light)" 
+    srcset="./assets/puzzle-bobble.svg"
+  />
+  <img 
+    alt="IvanOS animated contribution board" 
+    src="./assets/puzzle-bobble.svg"
+    width="100%"
+  />
+</picture>
+
+</div>
 
 ## Featured Work
 
