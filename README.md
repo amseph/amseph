@@ -23,30 +23,6 @@ I build simple, familiar, and user-focused digital experiences.
 | **Building** | Interactive Web Portfolio                     |
 | **Style**    | Clean, familiar, user-first experiences       |
 
-## About
-
-I'm Ivan, a BSIT student focused on **data analysis**, **automation**, and **UI/UX**.
-
-I like building systems that are not only functional, but also easy to understand. My goal is to design interfaces that feel familiar, so users can move through them without feeling lost.
-
----
-
-## Tech Stack
-
-**Languages:** HTML · CSS · JavaScript · TypeScript · C++
-**Frameworks:** React · Node.js
-**Database & Tools:** MySQL · MongoDB · Supabase · Vercel · Render · npm · Postman
-
----
-
-## Featured Work
-
-| Project                       | Focus                                                      |
-| ----------------------------- | ---------------------------------------------------------- |
-| **Ely Sales Agent**           | Real-time AI sales assistant for live client conversations |
-| **ECHO**                      | Clean personal finance tracking experience                 |
-| **Interactive Web Portfolio** | Smooth and familiar portfolio experience                   |
-
 ---
 
 ## Activity Monitor
@@ -73,3 +49,31 @@ I like building systems that are not only functional, but also easy to understan
 </picture>
 
 </div>
+
+---
+
+## About
+
+I'm Ivan, a BSIT student focused on **data analysis**, **automation**, and **UI/UX**.
+
+I like building systems that are not only functional, but also easy to understand. My goal is to design interfaces that feel familiar, so users can move through them without feeling lost.
+
+---
+
+## Tech Stack
+
+**Languages:** HTML · CSS · JavaScript · TypeScript · C++
+**Frameworks:** React · Node.js
+**Database & Tools:** MySQL · MongoDB · Supabase · Vercel · Render · npm · Postman
+
+---
+
+## Featured Work
+
+| Project                       | Focus                                                      |
+| ----------------------------- | ---------------------------------------------------------- |
+| **Ely Sales Agent**           | Real-time AI sales assistant for live client conversations |
+| **ECHO**                      | Clean personal finance tracking experience                 |
+| **Interactive Web Portfolio** | Smooth and familiar portfolio experience                   |
+
+---
