@@ -1,0 +1,130 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#060D1F"/>
+      <stop offset="1" stop-color="#081A39"/>
+    </linearGradient>
+
+    <linearGradient id="panelBg" x1="42" y1="42" x2="1158" y2="278" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#142A5B"/>
+      <stop offset="0.45" stop-color="#1A2F63"/>
+      <stop offset="1" stop-color="#163F70"/>
+    </linearGradient>
+
+    <linearGradient id="hudGlow" x1="765" y1="62" x2="970" y2="62" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#64E7FF"/>
+      <stop offset="1" stop-color="#35D7CF"/>
+    </linearGradient>
+
+    <pattern id="grid" width="18" height="18" patternUnits="userSpaceOnUse">
+      <rect width="18" height="18" fill="none"/>
+      <path d="M18 0H0V18" stroke="#4A6FB5" stroke-opacity="0.20" stroke-width="1"/>
+    </pattern>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      .pixel {
+        font-family: "Pixelify Sans", "Courier New", monospace;
+      }
+    </style>
+  </defs>
+
+  <!-- full bg -->
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <rect width="1200" height="320" fill="url(#grid)"/>
+
+  <!-- outer double frame -->
+  <rect x="8" y="8" width="1184" height="304" fill="none" stroke="#58BFFB" stroke-width="2"/>
+  <rect x="14" y="14" width="1172" height="292" fill="none" stroke="#D6EEFF" stroke-opacity="0.18" stroke-width="2"/>
+
+  <!-- main panel -->
+  <rect x="42" y="42" width="1116" height="236" fill="url(#panelBg)" stroke="#587CC4" stroke-width="2"/>
+
+  <!-- subtle scanlines -->
+  <g opacity="0.08">
+    <rect x="42" y="56" width="1116" height="2" fill="#FFFFFF"/>
+    <rect x="42" y="74" width="1116" height="2" fill="#FFFFFF"/>
+    <rect x="42" y="92" width="1116" height="2" fill="#FFFFFF"/>
+    <rect x="42" y="110" width="1116" height="2" fill="#FFFFFF"/>
+    <rect x="42" y="128" width="1116" height="2" fill="#FFFFFF"/>
+    <rect x="42" y="146" width="1116" height="2" fill="#FFFFFF"/>
+    <rect x="42" y="164" width="1116" height="2" fill="#FFFFFF"/>
+    <rect x="42" y="182" width="1116" height="2" fill="#FFFFFF"/>
+    <rect x="42" y="200" width="1116" height="2" fill="#FFFFFF"/>
+    <rect x="42" y="218" width="1116" height="2" fill="#FFFFFF"/>
+    <rect x="42" y="236" width="1116" height="2" fill="#FFFFFF"/>
+  </g>
+
+  <!-- top hud label -->
+  <rect x="64" y="60" width="258" height="34" fill="#132244" stroke="#7FB9FF" stroke-width="2"/>
+  <rect x="76" y="72" width="6" height="6" fill="#7AE7FF"/>
+  <rect x="90" y="72" width="6" height="6" fill="#FFE16A"/>
+  <rect x="104" y="72" width="6" height="6" fill="#FF7979"/>
+  <text x="126" y="83" fill="#F3F8FF" class="pixel" font-size="15" font-weight="700">AMSEPH / README.md</text>
+
+  <!-- title -->
+  <text x="68" y="150" fill="#07101F" class="pixel" font-size="72" font-weight="700">IvanOS</text>
+  <text x="64" y="146" fill="#F6FBFF" class="pixel" font-size="72" font-weight="700">IvanOS</text>
+
+  <!-- subtitle -->
+  <text x="66" y="185" fill="#F2D55E" class="pixel" font-size="23" font-weight="700">
+    CLEAN UI • SMART AUTOMATION • USEFUL DATA
+  </text>
+
+  <!-- description -->
+  <text x="66" y="224" fill="#F3F8FF" class="pixel" font-size="15">
+    Building simple, familiar, and user-focused digital experiences.
+  </text>
+
+  <!-- cyan divider -->
+  <rect x="66" y="240" width="455" height="5" fill="#45DFFF"/>
+
+  <!-- right top badge -->
+  <rect x="780" y="62" width="250" height="42" fill="url(#hudGlow)" filter="url(#softGlow)"/>
+  <text x="820" y="89" fill="#08101D" class="pixel" font-size="18" font-weight="700">UI/UX DEVELOPER</text>
+
+  <!-- right skill boxes -->
+  <rect x="780" y="118" width="152" height="34" fill="#1A2B57" stroke="#4A6FB5" stroke-width="2"/>
+  <rect x="944" y="118" width="152" height="34" fill="#1A2B57" stroke="#4A6FB5" stroke-width="2"/>
+  <rect x="780" y="162" width="152" height="34" fill="#1A2B57" stroke="#4A6FB5" stroke-width="2"/>
+  <rect x="944" y="162" width="152" height="34" fill="#1A2B57" stroke="#4A6FB5" stroke-width="2"/>
+
+  <text x="837" y="140" fill="#FFFFFF" class="pixel" font-size="16" font-weight="700">REACT</text>
+  <text x="980" y="140" fill="#FFFFFF" class="pixel" font-size="16" font-weight="700">SUPABASE</text>
+  <text x="830" y="184" fill="#FFFFFF" class="pixel" font-size="16" font-weight="700">VERCEL</text>
+  <text x="986" y="184" fill="#FFFFFF" class="pixel" font-size="16" font-weight="700">NODE.JS</text>
+
+  <!-- bottom right hud labels -->
+  <text x="780" y="228" fill="#9CC8FF" class="pixel" font-size="12" font-weight="700">PLAYER 1</text>
+  <text x="919" y="228" fill="#FFE16A" class="pixel" font-size="12" font-weight="700">READY</text>
+  <text x="990" y="228" fill="#71F08E" class="pixel" font-size="12" font-weight="700">STAGE 01</text>
+
+  <!-- tiny bars -->
+  <rect x="1001" y="233" width="10" height="14" fill="#73F08C"/>
+  <rect x="1017" y="233" width="10" height="14" fill="#F5D85D"/>
+  <rect x="1033" y="233" width="10" height="14" fill="#FF6E6E"/>
+
+  <!-- right pixel plus icons -->
+  <!-- red -->
+  <rect x="1110" y="72" width="10" height="30" fill="#FF6666"/>
+  <rect x="1100" y="82" width="30" height="10" fill="#FF6666"/>
+
+  <!-- yellow -->
+  <rect x="1132" y="98" width="10" height="30" fill="#FFE16A"/>
+  <rect x="1122" y="108" width="30" height="10" fill="#FFE16A"/>
+
+  <!-- green -->
+  <rect x="1110" y="124" width="10" height="30" fill="#47E78B"/>
+  <rect x="1100" y="134" width="30" height="10" fill="#47E78B"/>
+
+  <!-- purple -->
+  <rect x="1132" y="150" width="10" height="30" fill="#907BFF"/>
+  <rect x="1122" y="160" width="30" height="10" fill="#907BFF"/>
+</svg>
