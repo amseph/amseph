@@ -40,9 +40,7 @@ I like building systems that are not only functional, but easy to understand. My
 </div>
 
 ---
-
 ## Activity Monitor
-
 <div align="center">
 
 <br/><br/>

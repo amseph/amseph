@@ -1,0 +1,71 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D1117"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#58A6FF"/>
+      <stop offset="0.5" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#2DD4BF"/>
+    </linearGradient>
+
+    <filter id="blur" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
+
+  <circle cx="140" cy="70" r="90" fill="#58A6FF" opacity="0.10" filter="url(#blur)"/>
+  <circle cx="1030" cy="300" r="120" fill="#2DD4BF" opacity="0.08" filter="url(#blur)"/>
+
+  <rect x="42" y="34" width="1116" height="292" rx="24" fill="white" fill-opacity="0.03" stroke="white" stroke-opacity="0.08"/>
+
+  <text x="72" y="78" fill="#F0F6FC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">
+    System Status
+  </text>
+
+  <text x="72" y="106" fill="#8B949E" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">
+    Current dev mode and focus
+  </text>
+
+  <rect x="72" y="132" width="492" height="56" rx="16" fill="white" fill-opacity="0.04"/>
+  <text x="96" y="154" fill="#8B949E" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="600">
+    MODE
+  </text>
+  <text x="96" y="173" fill="#F0F6FC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="600">
+    UI/UX-focused Developer
+  </text>
+
+  <rect x="596" y="132" width="492" height="56" rx="16" fill="white" fill-opacity="0.04"/>
+  <text x="620" y="154" fill="#8B949E" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="600">
+    LEARNING
+  </text>
+  <text x="620" y="173" fill="#F0F6FC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="600">
+    Cloud Computing
+  </text>
+
+  <rect x="72" y="204" width="492" height="56" rx="16" fill="white" fill-opacity="0.04"/>
+  <text x="96" y="226" fill="#8B949E" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="600">
+    FOCUS
+  </text>
+  <text x="96" y="245" fill="#F0F6FC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="600">
+    Data Analysis • Automation • Interface Design
+  </text>
+
+  <rect x="596" y="204" width="492" height="56" rx="16" fill="white" fill-opacity="0.04"/>
+  <text x="620" y="226" fill="#8B949E" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="600">
+    BUILDING
+  </text>
+  <text x="620" y="245" fill="#F0F6FC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="600">
+    Interactive Web Portfolio
+  </text>
+
+  <rect x="72" y="276" width="1016" height="32" rx="16" fill="white" fill-opacity="0.04"/>
+  <circle cx="94" cy="292" r="5" fill="url(#accent)"/>
+  <text x="110" y="297" fill="#C9D1D9" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">
+    Style: Clean, familiar, user-first experiences
+  </text>
+</svg>
