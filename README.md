@@ -22,8 +22,6 @@ I like building systems that are not only functional, but easy to understand. My
 
 <sub>PLAYER 1 LOADOUT</sub>
 
-<br/><br/>
-
 <img src="https://skillicons.dev/icons?i=html,css,js,ts,cpp,react,nodejs,mysql,mongodb,supabase,vercel,npm,postman&theme=dark&perline=13" alt="Tech Stack Icons" />
 
 </div>
