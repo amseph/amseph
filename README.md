@@ -23,15 +23,6 @@ I build simple, familiar, and user-focused digital experiences.
 | **Building** | Interactive Web Portfolio                     |
 | **Style**    | Clean, familiar, user-first experiences       |
 
----
-
-### My Coding Arena 💣
-
-![Bomberman Contribution Graph](assets/bomberman-dark.svg#gh-dark-mode-only)
-![Bomberman Contribution Graph](assets/bomberman.svg#gh-light-mode-only)
-
----
-
 ## About
 
 I'm Ivan, a BSIT student focused on **data analysis**, **automation**, and **UI/UX**.
@@ -60,9 +51,25 @@ I like building systems that are not only functional, but also easy to understan
 
 ## Activity Monitor
 
-<p align="center">
-  <img 
-    src="https://github-readme-activity-graph.vercel.app/graph?username=amseph&bg_color=0d1117&color=c9d1d9&line=58a6ff&point=f0f6fc&area=true&hide_border=true&custom_title=Activity%20Monitor" 
-    alt="GitHub Activity Monitor"
-  />
+<div align="center">
+
+<p>
+  <strong>Activity Overview</strong><br/>
 </p>
+
+<picture>
+  <source 
+    media="(prefers-color-scheme: dark)" 
+    srcset="https://raw.githubusercontent.com/amseph/amseph/output/bomberman-contribution-graph-dark.svg"
+  />
+  <source 
+    media="(prefers-color-scheme: light)" 
+    srcset="https://raw.githubusercontent.com/amseph/amseph/output/bomberman-contribution-graph.svg"
+  />
+  <img 
+    alt="Bomberman contribution graph" 
+    src="https://raw.githubusercontent.com/amseph/amseph/output/bomberman-contribution-graph.svg"
+  />
+</picture>
+
+</div>
