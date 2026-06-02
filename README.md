@@ -32,26 +32,20 @@
 
 ## Contact
 
-<p align="center">
-  Slide right in if you want to collaborate on a project!
-</p>
+Slide right in if you want to collaborate on a project!
 
-<p align="center">
-  <a href="https://github.com/amseph">
-    <img src="./assets/contact-github.svg" width="42" alt="GitHub" />
-  </a>
-  <a href="mailto:jaurigue.ijj@gmail.com">
-    <img src="./assets/contact-email.svg" width="42" alt="Email" />
-  </a>
-  <a href="https://www.linkedin.com/in/jaurigueivan">
-    <img src="./assets/contact-linkedin.svg" width="42" alt="LinkedIn" />
-  </a>
-  <a href="https://discord.com/users/739709074433769543">
-    <img src="./assets/contact-discord.svg" width="42" alt="Discord" />
-  </a>
-</p>
-
-</div>
+<a href="https://github.com/amseph">
+  <img src="./assets/contact-github.svg" width="42" alt="GitHub" />
+</a>
+<a href="mailto:jaurigue.ijj@gmail.com">
+  <img src="./assets/contact-email.svg" width="42" alt="Email" />
+</a>
+<a href="https://www.linkedin.com/in/jaurigueivan">
+  <img src="./assets/contact-linkedin.svg" width="42" alt="LinkedIn" />
+</a>
+<a href="https://discord.com/users/739709074433769543">
+  <img src="./assets/contact-discord.svg" width="42" alt="Discord" />
+</a>
 
 ---
 ## Activity Monitor
