@@ -18,7 +18,8 @@ jobs:
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ${{ github.repository_owner }}
-          scenario: bomberman 
+          games: bomberman 
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Save Animation to Assets
         run: |
