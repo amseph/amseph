@@ -32,21 +32,16 @@ I like building systems that are not only functional, but easy to understand. My
 
 <div align="center">
 
-<picture>
-  <source 
-    media="(prefers-color-scheme: dark)" 
-    srcset="https://raw.githubusercontent.com/amseph/amseph/output/bomberman-contribution-graph-dark.svg"
-  />
-  <source 
-    media="(prefers-color-scheme: light)" 
-    srcset="https://raw.githubusercontent.com/amseph/amseph/output/bomberman-contribution-graph.svg"
-  />
-  <img 
-    alt="IvanOS animated contribution activity monitor" 
-    src="https://raw.githubusercontent.com/amseph/amseph/output/bomberman-contribution-graph.svg"
-    width="100%"
-  />
-</picture>
+<strong>Activity Overview</strong><br/>
+<sub>GitHub activity and contribution movement</sub>
+
+<br/><br/>
+
+<img 
+  width="100%"
+  src="https://github-readme-activity-graph.vercel.app/graph?username=amseph&custom_title=Activity%20Overview&bg_color=0d1117&color=c9d1d9&line=58a6ff&point=f0f6fc&area=true&hide_border=true&radius=16&height=280" 
+  alt="GitHub Activity Graph"
+/>
 
 </div>
 
