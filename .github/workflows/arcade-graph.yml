@@ -1,0 +1,36 @@
+```yaml
+name: Generate Arcade Contribution Graph
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Runs automatically every day at midnight
+  workflow_dispatch: # Allows you to run it manually anytime
+
+jobs:
+  generate:
+    permissions: 
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Generate Bomberman Graph
+        uses: abozanona/pacman-contribution-graph@main
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          scenario: bomberman 
+
+      - name: Save Animation to Assets
+        run: |
+          mkdir -p assets
+          mv bomberman.svg assets/bomberman.svg
+          mv bomberman-dark.svg assets/bomberman-dark.svg
+
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add assets/bomberman.svg assets/bomberman-dark.svg
+          git commit -m "chore: update arcade contribution graph animation" || exit 0
+          git push
