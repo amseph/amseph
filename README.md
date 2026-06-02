@@ -17,18 +17,6 @@
       <stop offset="1" stop-color="#0A2540"/>
     </linearGradient>
 
-```
-<linearGradient id="accent" x1="250" y1="60" x2="950" y2="260" gradientUnits="userSpaceOnUse">
-  <stop stop-color="#58A6FF"/>
-  <stop offset="0.5" stop-color="#A78BFA"/>
-  <stop offset="1" stop-color="#2DD4BF"/>
-</linearGradient>
-
-<filter id="blur">
-  <feGaussianBlur stdDeviation="45"/>
-</filter>
-```
-
   </defs>
 
   <rect width="1200" height="320" rx="28" fill="url(#bg)"/>
